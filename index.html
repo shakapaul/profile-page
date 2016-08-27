@@ -7,26 +7,203 @@
     <title>Profile Page</title>
     <link rel="stylesheet" href="./css/foundation.css">
     <link rel="stylesheet" href="./css/app.css">
-    <link rel="stylesheet" href="./public/foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="./foundation-icons/foundation-icons.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
     <!-- <link rel="stylesheet" type="text/css" href="./public/style/profile.css"> -->
     <style type="text/css">
+    #inpt{
+        border-radius: 5px;
+        padding: 5px;
+    }
+    #pc{
+        width: 35px;
+        height: 35px;
+    }
+    #tt{
+        height: 60px;
+        padding-top: 0px;
+        background-color: #3b5998;
+    }
+    #dd{
+        padding-top: 0px;
+    }
+    #ipt{
+        padding-top: 10px;
+    }
+    #ts{
+        background-color: #3b5998;
+        margin-top: 0px
+    }
+    #main{
+        padding-top: 20px;
+    }
+    #sm{
+        background-color: #3b5998;
+    }
 
+    body{
+        margin: 0px auto;
+    }
+    #pst{
+        padding: 10px;
+    }
+    #ic{
+        text-align: center;
+    }
+    #ta{
+        text-align: center;
+    }
+    #tal{
+        padding-left: 30px;
+    }
     </style>
     </head>
     <body>
 
-        <div row>
-            <div class="callout">
-              <ul class="menu">
-                <li><input type="text" name="serach" placeholder="Search Amavala"></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Notifications</a></li>
-                <li><a href="">Messages</a></li>
+         <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+              <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+                <img src="me.jpg">
+                <ul class="menu vertical">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Log out</a></li>
+                </ul>
+              </div>
+
+              <div class="off-canvas-content show-for-small-only" data-off-canvas-content>
+                <div id="ts" class="title-bar">
+                  <div  class="title-bar-left">
+                    <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+                    <span class="title-bar-title">Home</span>
+                  </div>
+                </div>
+
+                  <div id="main" class="row">
+                    <div class="small-12 columns">
+                        <div class="callout">
+                            <form>
+                                <label>
+                                <a href="#"><img id="pc" src="me.jpg"></a>
+                                  What are you up to?
+                                  <textarea placeholder="None"></textarea>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="small-12 columns">
+                        <div class="callout">
+                            <div class="row">
+                                <div class="small-2 columns">
+                                    <a href="#"><img src="me.jpg"></a>
+                                </div>
+                                <div class="small-10 columns">
+                                    <a href="#"><p>@ShyakaShaka</p></a>
+                                </div>
+                                <div class="small-10 offset-2 columns">
+                                    <p>My first post and this is what i choose to post. Amavala.co.ke. Welcome one Welcome all. Bringing the models to your phone and sitting room.</p>
+                                </div>
+                                <div class="small-12 columns">
+                                    <a href="#"><img src="me.jpg"></a>
+                                </div>
+                                <div id="ic" class="small-6 columns">
+                                     <a href=""><i class="fi-heart"></i> <span>35</span></a>
+                                </div>
+                                <div id="ic" class="small-6 columns">
+                                     <a href=""><i class="fi-comments"></i> <span>50</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- LAERGE PAGE -->
+
+            <div id="tt" class="title-bar show-for-large">
+              <ul id="dd" class="dropdown menu" data-dropdown-menu>
+              <div id="ipt" class="medium-4 columns">
+                 <li><input id="inpt" type="text" name="search" placeholder="Search Amavala"></li>
+              </div>
+              <li><a href=""><i class="fi-home"></i> <span>Home</span></a></li>
+              <li><a href=""><i class="fi-mail"></i> <span>Messages</span></a></li>
+              <li><a href=""><i class="fi-volume"></i> <span>Notifications</span></a></li>
+              <li id="lsm">
+                <a href="#"><img id="pc" src="me.jpg"></a>
+                <ul id="sm" class="menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Logout</a></li>
+                 </ul>
+               </li>
               </ul>
             </div>
-        </div>
-     
+
+          <div id="main" class="row">
+            <div class="large-3 columns show-for-large">
+                <div class="callout">
+                    <a href="#"><img src="me.jpg"></a>
+              </div>
+              <div id="tal">
+                  <a  href="">Shaka Paul</a>
+              </div>
+              <div id="tal">
+                  <a href="">12 September 1988</a>
+              </div>
+              <div id="tal">
+                  <a href="">shyakarob7@gmail.com</a>
+              </div>
+              <div id="tal">
+                  <a href="">www.amavala.co.ke</a>
+              </div>
+            </div>
+
+                <div class="large-6 columns show-for-large">
+                <div class="callout">
+                    <form>
+                        <label>
+                        <a href="#"><img id="pc" src="me.jpg"></a>
+                          What are you up to?
+                          <textarea placeholder="None"></textarea>
+                        </label>
+                    </form>
+                </div>
+
+                <div id="pst" class="callout">
+                    <div class="row">
+                        <div class="large-2 columns">
+                             <a href="#"><img src="me.jpg"></a>
+                        </div>
+                        <div class="large-10 columns">
+                             <a href="#"><p>@ShyakaShaka</p></a>
+                        </div>
+                        <div class="large-10 offset-2 columns">
+                             <p>My first post and this is what i choose to post. Amavala.co.ke. Welcome one Welcome all. Bringing the models to your phone and sitting room.</p>
+                        </div>
+                        <div class="large-12 columns">
+                             <a href="#"><img src="me.jpg"></a>
+                        </div>
+                        <div id="ic" class="large-6 columns">
+                             <a href=""><i class="fi-heart"></i>
+                        </div>
+                        <div id="ic" class="large-6 columns">
+                             <a href=""><i class="fi-comment"></i>
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <div class="large-3 columns show-for-large">
+                <div id="ta" class="callout">
+                  <p> © 2016 Amavala About Help Terms Privacy Cookies Ads info Brand Blog Status Apps Jobs Businesses Media Developers</p>
+              </div>
+            </div>
+          </div>
+       
+<!-- LARGE PAGE -->
     	  	
     <script src="./js/vendor/jquery.js"></script>
     <script src="./js/vendor/what-input.js"></script>
