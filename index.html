@@ -9,54 +9,7 @@
     <link rel="stylesheet" href="./css/app.css">
     <link rel="stylesheet" href="./foundation-icons/foundation-icons.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-    <!-- <link rel="stylesheet" type="text/css" href="./public/style/profile.css"> -->
-    <style type="text/css">
-    #inpt{
-        border-radius: 5px;
-        padding: 5px;
-    }
-    #pc{
-        width: 35px;
-        height: 35px;
-    }
-    #tt{
-        height: 60px;
-        padding-top: 0px;
-        background-color: #3b5998;
-    }
-    #dd{
-        padding-top: 0px;
-    }
-    #ipt{
-        padding-top: 10px;
-    }
-    #ts{
-        background-color: #3b5998;
-        margin-top: 0px
-    }
-    #main{
-        padding-top: 20px;
-    }
-    #sm{
-        background-color: #3b5998;
-    }
-
-    body{
-        margin: 0px auto;
-    }
-    #pst{
-        padding: 10px;
-    }
-    #ic{
-        text-align: center;
-    }
-    #ta{
-        text-align: center;
-    }
-    #tal{
-        padding-left: 30px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
     </head>
     <body>
 
@@ -79,16 +32,37 @@
                     <span class="title-bar-title">Home</span>
                   </div>
                 </div>
+                <div id="stl" class="title-bar">
+                  <ul class="menu">
+                   <div class="row">
+                   <div class="small-4 columns">
+                     <li><a href=""><i class="fi-mail"></i> <span>Messages</span></a></li>
+                   </div>
+                     <div class="small-4 columns">
+                      <li><a href=""><i class="fi-web"></i> <span>Notifications</span></a></li>
+                     </div>
+                     <div class="small-4 columns">
+                       <li><a href=""><i class="fi-magnifying-glass"></i> <span>Search</span></a></li>
+                     </div>
+                   </div>
+                </ul>
+                </div>
 
                   <div id="main" class="row">
                     <div class="small-12 columns">
                         <div class="callout">
                             <form>
-                                <label>
-                                <a href="#"><img id="pc" src="me.jpg"></a>
-                                  What are you up to?
-                                  <textarea placeholder="None"></textarea>
-                                </label>
+                              <div class="row">
+                                  <div class="small-2 columns">
+                                    <a href="#"><img id="pcc" src="me.jpg"></a>
+                                  </div>
+                                  <div class="small-8 columns">
+                                    <textarea placeholder="What are you up to?"></textarea>
+                                  </div>
+                                  <div class="small-2 columns">
+                                    <input class="button" type="submit" name="" value="Post">
+                                  </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -103,16 +77,17 @@
                                     <a href="#"><p>@ShyakaShaka</p></a>
                                 </div>
                                 <div class="small-10 offset-2 columns">
-                                    <p>My first post and this is what i choose to post. Amavala.co.ke. Welcome one Welcome all. Bringing the models to your phone and sitting room.</p>
+                                    <p id="pll">My first post and this is what i choose to post. Amavala.co.ke. Welcome one Welcome all. Bringing the models to your phone and sitting room.</p>
                                 </div>
                                 <div class="small-12 columns">
                                     <a href="#"><img src="me.jpg"></a>
                                 </div>
+                                <hr>
                                 <div id="ic" class="small-6 columns">
                                      <a href=""><i class="fi-heart"></i> <span>35</span></a>
                                 </div>
                                 <div id="ic" class="small-6 columns">
-                                     <a href=""><i class="fi-comments"></i> <span>50</span></a>
+                                     <a href=""><i class="fi-comment"></i> <span>50</span></a>
                                 </div>
                             </div>
                         </div>
@@ -165,11 +140,17 @@
                 <div class="large-6 columns show-for-large">
                 <div class="callout">
                     <form>
-                        <label>
-                        <a href="#"><img id="pc" src="me.jpg"></a>
-                          What are you up to?
-                          <textarea placeholder="None"></textarea>
-                        </label>
+                      <div class="row">
+                          <div class="large-2 columns">
+                            <a href="#"><img id="pcc" src="me.jpg"></a>
+                          </div>
+                          <div class="large-8 columns">
+                            <textarea placeholder="What are you up to?"></textarea>
+                          </div>
+                          <div class="large-2 columns">
+                            <input class="button" type="submit" name="" value="Post">
+                          </div>
+                        </div>
                     </form>
                 </div>
 
@@ -187,6 +168,7 @@
                         <div class="large-12 columns">
                              <a href="#"><img src="me.jpg"></a>
                         </div>
+                        <hr>
                         <div id="ic" class="large-6 columns">
                              <a href=""><i class="fi-heart"></i>
                         </div>
